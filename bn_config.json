@@ -1,0 +1,425 @@
+{
+  "factors": [
+    {
+      "id": "HF_SkillError",
+      "name": "Ошибка навыков пилота",
+      "category": "HF",
+      "states": [
+        {"label": "Нет", "code": 0},
+        {"label": "Да", "code": 1} 
+      ]
+    },
+    {
+      "id": "HF_DecisionError",
+      "name": "Ошибка принятия решений пилота",
+      "category": "HF",
+      "states": [
+        {"label": "Нет", "code": 0},
+        {"label": "Да", "code": 1}
+      ]
+    },
+    {
+      "id": "HF_PerceptionError",
+      "name": "Ошибка восприятия пилота",
+      "category": "HF",
+      "states": [
+        {"label": "Нет", "code": 0},
+        {"label": "Да", "code": 1} 
+      ]
+    },
+    {
+      "id": "HF_Violation", 
+      "name": "Нарушение процедур пилотом (общее)",
+      "category": "HF",
+      "states": [
+        {"label": "Нет", "code": 0},
+        {"label": "Да", "code": 1}
+      ]
+    },
+   
+    {
+      "id": "HF_Stress",
+      "name": "Стресс пилота",
+      "category": "HF",
+      "states": [
+        {"label": "Отсутствует", "code": 0},
+        {"label": "Умеренный", "code": 1},
+        {"label": "Высокий", "code": 2} 
+      ]
+    },
+
+    {
+      "id": "HF_Distraction",
+      "name": "Невнимательность/Отвлечение пилота",
+      "category": "HF",
+      "states": [
+        {"label": "Отсутствовало", "code": 0},
+        {"label": "Присутствовало", "code": 1} 
+      ]
+    },
+    {
+      "id": "HF_KnowledgeSkill",
+      "name": "Знания/Навыки пилота",
+      "category": "HF",
+      "states": [
+        {"label": "Достаточные", "code": 0},
+        {"label": "Недостаточные", "code": 1} 
+      ]
+    },
+
+    {
+      "id": "HF_CRM",
+      "name": "Качество CRM",
+      "category": "HF",
+      "states": [
+        {"label": "Высокое", "code": 0},
+        {"label": "Среднее", "code": 1},
+        {"label": "Низкое", "code": 2} 
+      ]
+    },
+  
+    {
+      "id": "HF_ATC_InstructionError",
+      "name": "Ошибка  УВД",
+      "category": "HF",
+      "states": [
+        {"label": "Нет", "code": 0},
+        {"label": "Да", "code": 1}
+      ]
+    },
+
+    {
+      "id": "HF_Maint_Pressure",
+      "name": "Давление/Спешка при ТО",
+      "category": "HF", 
+      "states": [
+        {"label": "Отсутствовало", "code": 0},
+        {"label": "Присутствовало", "code": 1} 
+      ]
+    },
+    {
+      "id": "HF_Ground_FuelError",
+      "name": "Ошибка заправки топливом", 
+      "category": "HF",
+      "states": [
+        {"label": "Нет", "code": 0},
+        {"label": "Да", "code": 1}
+      ]
+    },
+
+    {
+      "id": "HF_Ground_Deicing",
+      "name": "Качество противообледенительной обработки",
+      "category": "HF",
+      "states": [
+        {"label": "Не требовалось", "code": 0},
+        {"label": "Адекватное", "code": 1},
+        {"label": "Неадекватное", "code": 2}
+      ]
+    },
+    {
+      "id": "HF_Ground_FOD",
+      "name": "Риск FOD (Посторонние предметы)",
+      "category": "HF", 
+      "states": [
+        {"label": "Низкий", "code": 0},
+        {"label": "Высокий", "code": 1} 
+      ]
+    },
+    {
+      "id": "Tech_SystemFailure", 
+      "name": "Отказ системы ВС (общий)",
+      "category": "Tech",
+      "states": [
+        {"label": "Исправна", "code": 0},
+        {"label": "Отказ", "code": 1}
+      ]
+    },
+    {
+      "id": "Tech_DesignFlaw",
+      "name": "Конструктивный недостаток ВС",
+      "category": "Tech",
+      "states": [
+        {"label": "Отсутствует", "code": 0},
+        {"label": "Присутствует (влияющий)", "code": 1}
+      ]
+    },
+
+    {
+      "id": "Tech_Fire",
+      "name": "Пожар на борту",
+      "category": "Tech",
+      "states": [
+        {"label": "Нет", "code": 0},
+        {"label": "Да", "code": 1}
+      ]
+    },
+    {
+      "id": "Env_Icing",
+      "name": "Обледенение",
+      "category": "Env",
+      "states": [
+        {"label": "Отсутствует", "code": 0},
+        {"label": "Слабое", "code": 1},
+        {"label": "Умеренное", "code": 2},
+        {"label": "Сильное", "code": 3}
+      ]
+    },
+    {
+      "id": "Env_Turbulence",
+      "name": "Турбулентность",
+      "category": "Env",
+      "states": [
+        {"label": "Отсутствует", "code": 0},
+        {"label": "Слабая", "code": 1},
+        {"label": "Умеренная", "code": 2},
+        {"label": "Сильная", "code": 3}
+      ]
+    },
+    {
+      "id": "Env_WindShear",
+      "name": "Сдвиг ветра",
+      "category": "Env",
+      "states": [
+        {"label": "Отсутствует", "code": 0},
+        {"label": "Присутствует (значимый)", "code": 1}
+      ]
+    },
+    {
+      "id": "Env_Thunderstorm",
+      "name": "Грозовая деятельность",
+      "category": "Env",
+      "states": [
+        {"label": "Отсутствует", "code": 0},
+        {"label": "Присутствует (в зоне полета)", "code": 1}
+      ]
+    },
+    {
+      "id": "Env_Visibility",
+      "name": "Видимость",
+      "category": "Env",
+      "states": [
+        {"label": "Выше минимума", "code": 0},
+        {"label": "Ниже минимума", "code": 1}
+      ]
+    },
+    {
+      "id": "Env_Ceiling",
+      "name": "Высота нижней границы облаков (ВНГО)",
+      "category": "Env",
+      "states": [
+        {"label": "Выше минимума", "code": 0},
+        {"label": "Ниже минимума", "code": 1}
+      ]
+    },
+    {
+      "id": "Env_SurfaceWind",
+      "name": "Ветер у земли",
+      "category": "Env",
+      "states": [
+        {"label": "В пределах ограничений", "code": 0},
+        {"label": "За пределами ограничений", "code": 1}
+      ]
+    },
+    {
+      "id": "Env_Temperature",
+      "name": "Температура (влияние на характеристики)",
+      "category": "Env",
+      "states": [
+        {"label": "Нормальная", "code": 0},
+        {"label": "Экстремальная", "code": 1}
+      ]
+    },
+
+    {
+      "id": "Env_RunwayCondition",
+      "name": "Состояние ВПП",
+      "category": "Env",
+      "states": [
+        {"label": "Сухая", "code": 0},
+        {"label": "Мокрая", "code": 1},
+        {"label": "Загрязненная (снег/лед/вода)", "code": 2}
+      ]
+    },
+    {
+      "id": "Env_AirportLights",
+      "name": "Светосигнальное оборудование аэродрома",
+      "category": "Env",
+      "states": [
+        {"label": "Исправно", "code": 0},
+        {"label": "Неисправно/Неадекватно", "code": 1}
+      ]
+    },
+    {
+      "id": "Env_NavAids",
+      "name": "Навигационные средства аэродрома",
+      "category": "Env",
+      "states": [
+        {"label": "Исправны", "code": 0},
+        {"label": "Неисправны/Отсутствуют", "code": 1}
+      ]
+    },
+    {
+      "id": "Env_Obstacles",
+      "name": "Риск препятствий (аэродром/вблизи)",
+      "category": "Env",
+      "states": [
+        {"label": "Низкий", "code": 0},
+        {"label": "Высокий", "code": 1}
+      ]
+    },
+    {
+      "id": "Env_Terrain",
+      "name": "Рельеф местности (сложность)",
+      "category": "Env",
+      "states": [
+        {"label": "Простой/Равнинный", "code": 0},
+        {"label": "Сложный/Горный", "code": 1}
+      ]
+    },
+    {
+      "id": "Env_TrafficDensity",
+      "name": "Интенсивность воздушного движения",
+      "category": "Env",
+      "states": [
+        {"label": "Низкая", "code": 0},
+        {"label": "Средняя", "code": 1},
+        {"label": "Высокая", "code": 2}
+      ]
+    },
+    {
+      "id": "Env_AirspaceComplexity",
+      "name": "Сложность структуры ВП / схем",
+      "category": "Env",
+      "states": [
+        {"label": "Низкая", "code": 0},
+        {"label": "Высокая", "code": 1} 
+      ]
+    },
+    {
+      "id": "Env_BirdstrikeRisk",
+      "name": "Риск столкновения с птицами",
+      "category": "Env",
+      "states": [
+        {"label": "Низкий", "code": 0},
+        {"label": "Средний", "code": 1},
+        {"label": "Высокий", "code": 2}
+      ]
+    },
+    {
+      "id": "Org_ProceduresQuality",
+      "name": "Качество процедур/РЛЭ",
+      "category": "Org",
+      "states": [
+        {"label": "Адекватное", "code": 0},
+        {"label": "Неадекватное", "code": 1}
+      ]
+    },
+
+    {
+      "id": "Org_SMS_Effectiveness",
+      "name": "Эффективность СУБП",
+      "category": "Org",
+      "states": [
+        {"label": "Высокая", "code": 0},
+        {"label": "Средняя", "code": 1},
+        {"label": "Низкая", "code": 2}
+      ]
+    },
+    {
+      "id": "Org_Resources",
+      "name": "Достаточность ресурсов (кадры, финансы, время)",
+      "category": "Org",
+      "states": [
+        {"label": "Достаточные", "code": 0},
+        {"label": "Недостаточные", "code": 1}
+      ]
+    },
+    {
+      "id": "Org_Pressure",
+      "name": "Производственное давление",
+      "category": "Org",
+      "states": [
+        {"label": "Нормальное", "code": 0},
+        {"label": "Высокое", "code": 1}
+      ]
+    },
+
+    {
+      "id": "Org_SafetyCulture",
+      "name": "Культура безопасности",
+      "category": "Org",
+      "states": [
+        {"label": "Позитивная/Сильная", "code": 0},
+        {"label": "Негативная/Слабая", "code": 1}
+      ]
+    },
+    {
+      "id": "Org_RegulatoryOversight",
+      "name": "Качество государственного надзора",
+      "category": "Org",
+      "states": [
+        {"label": "Достаточное", "code": 0},
+        {"label": "Недостаточное", "code": 1}
+      ]
+    },
+    {
+      "id": "Ctx_TaskComplexity",
+      "name": "Сложность задачи/полета",
+      "category": "Ctx",
+      "states": [
+        {"label": "Нормальная", "code": 0},
+        {"label": "Высокая", "code": 1}
+      ]
+    },
+    {
+      "id": "Ctx_Workload",
+      "name": "Рабочая нагрузка (пилота/диспетчера)",
+      "category": "Ctx",
+      "states": [
+        {"label": "Нормальная", "code": 0},
+        {"label": "Высокая", "code": 1}
+      ]
+    },
+    {
+      "id": "Ctx_UnexpectedEvents",
+      "name": "Неожиданные события в полете",
+      "category": "Ctx",
+      "states": [
+        {"label": "Не произошли", "code": 0},
+        {"label": "Произошли", "code": 1}
+      ]
+    },
+     {
+      "id": "Ctx_FlightPhase",
+      "name": "Этап полета",
+      "category": "Ctx",
+      "states": [
+        {"label": "Стоянка", "code": 0},
+        {"label": "Руление", "code": 1},
+        {"label": "Взлет", "code": 2},
+        {"label": "Набор высоты", "code": 3},
+        {"label": "Крейсерский полет", "code": 4},
+        {"label": "Снижение", "code": 5},
+        {"label": "Заход на посадку", "code": 6},
+        {"label": "Посадка", "code": 7},
+        {"label": "Пробег", "code": 8}
+      ]
+    }
+  ],
+
+  "outcome_node": "Outcome_Severity", 
+  "outcome_states": [ 
+     {"label": "Инцидент/Без последствий", "code": 0},
+     {"label": "Авария", "code": 1},
+     {"label": "Катастрофа", "code": 2}
+  ],
+  "category_mapping": {
+    "Env": "ВнешнУсл", 
+    "HF": "ЧелФактор",   
+    "Tech": "ТехничФактор", 
+    "Org": "ОрганизФактор", 
+    "Ctx": null, 
+    "Ext": null  
+  }
+}
